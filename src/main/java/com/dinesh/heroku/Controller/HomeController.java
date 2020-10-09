@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/home")
 public class HomeController {
 
-    @RequestMapping(value = {"/","/page"})
+    @RequestMapping("/page")
     public String home_page(Model model){
         model.addAttribute("user",new User());
         return "form";
