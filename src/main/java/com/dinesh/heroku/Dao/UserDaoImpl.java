@@ -27,7 +27,7 @@ public class UserDaoImpl implements UserDao {
 
         Session session=entityManager.unwrap(Session.class);
 
-        user.setId(0);
+//        user.setId(0);
 
         session.saveOrUpdate(user);
 

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-        alert("submit button clicked before");
+//        alert("submit button clicked before");
     $(".submit").click(function(event){
 
         event.preventDefault();
