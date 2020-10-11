@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+/*Use fonts
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+
+.section-1{
+    /*background-image:url('../image/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg');*/
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg');
+    background-size:cover;
+    backgournd-repeat:no-repeat;
+    background-position:center;
+    height:80vh;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index:-1;
+
+
+}
+
+.section-1 h1{
+
+     font-family: 'Montserrat', sans-serif;
+     font-weight:900;
+     color:white;
+     font-size:45px;
+     position:relative;
+     top:210px;
+     left:0px;
+     max-width:74%;
+     margin-left:255px;
+
+}
+
+.section-1 h5{
+    font-family: 'Montserrat', sans-serif;
+     font-weight:700;
+     color:white;
+    font-size:21px;
+     position:relative;
+     top:210px;
+     left:0px;
+     margin-left:257px;
+
+}
+
+.section-1 input{
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+     position:relative;
+     top:210px;
+     left:258px;
+     font-size:20px;
+     padding:8px 23px 8px 23px;
+     margin-top:20px;
+     cursor:pointer;
+     z-index:0;
+
+}
+
+.section-1 input:hover{
+
+    background-color:#f8f9fa;
+    color:black;
+
+}
+
+
+
+.section-5 .sign-up {
+
+
+
+}
+.sign-up_btn {
+     position:absolute;
+     top:210px;
+     left:258px;
+     font-size:20px;
+
+
+}
+
+
+
+.mynavbar_div{
+    background: rgba(0,0,0,0.7);
+    /*background-color:#050505;*/
+    max-width:50%;
+    margin-left:345px;
+    margin-top:20px;
+
+
+}
+
+.mynavbar_div ul {
+
+   padding:18px;
+    margin-left:77px;
+}
+
+
+.mynavbar_div ul li{
+
+    color:white;
+    display:inline-block;
+    padding-right:50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+    cursor:pointer;
+
+}
+
+.mynavbar_div ul li:hover{
+    color:#393e46;
+  }
+ .mynavbar_div ul li a{
+    text-decoration:none;
+    color:white
+ }
+
+ .mynavbar_div ul li a:hover{
+     color:#393e46;
+   }
+
+ .section-2 {
+    position:relative;
+     top:530px;
+     left:0px;
+     margin-left:185px;
+     margin-bottom:20px;
+
+ }
+
+ .section-2_title h1{
+       margin-top:-60px;
+       margin-left:365px;
+       font-family: 'Montserrat', sans-serif;
+       font-weight:600;
+       padding-bottom:41px;
+
+
+ }
+
+.section-2 .card{
+    display:inline-block;
+    outline:none;
+    border:none;
+    margin-right:70px;
+  }
+
+.section-2 .card i{
+
+    font-size:80px;
+    padding-left:89px;
+    margin-left:12px;
+}
+
+.section-2 .card .card-body .card-title{
+    text-align:center;
+}
+
+.section-2 .card .card-body{
+    text-align:center;
+}
+
+.section-3 {
+
+    position:relative;
+     top:600px;
+     left:0px;
+     padding-left:185px;
+     margin-bottom:20px;
+     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg');
+     background-position:center;
+     display:block;
+      /*background: rgba(0,0,0,0.7);*/
+
+ }
+
+ .section-3_title h1{
+
+        margin-left:320px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight:600;
+        padding-top:40px;
+        color:#ffffff;
+
+
+  }
+
+.section-3 .card{
+    display:inline-block;
+    border:1px solid #333333;
+    margin-right:70px;
+    margin-top:55px;
+    margin-bottom:55px;
+    overflow:hidden;
+
+  }
+
+.section-3_title{
+
+}
+
+.section-3 .card i{
+
+    font-size:80px;
+    padding-left:89px;
+}
+
+.section-3 .card .card-body .card-title{
+    text-align:center;
+}
+
+.section-3 .card .card-body{
+    background-color:#dfdfdf;
+    text-align:center;
+      /*background-color:#333333;*/
+
+}
+
+
+
+.section-3 .card .card-body .card-title{
+    text-align:center;
+
+
+}
+
+.section-3 .card .card-img-top{
+    opacity:0.9;
+    transition:transform 0.5s, opacity 0.5s;
+}
+
+.section-3 .card .card-img-top:hover{
+    opacity:1;
+    transform:scale(0.9);
+
+}
+
+.img_1{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+
+
+.section-4 {
+
+    position:relative;
+     top:600px;
+     left:0px;
+     padding-left:185px;
+     margin-bottom:20px;
+     /*background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg');*/
+     background-position:center;
+     display:block;
+      /*background: rgba(0,0,0,0.7);*/
+
+ }
+
+ .section-4 .city_feature_section .city_feature_section_img{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/dest_wiki_541.jpg');
+    width:70%;
+    height:70vh;
+    background-repeat:no-repeat;
+    background-position:center;
+    transition:background-position 0.5s,transform 0.5s, opacity 0.5s;
+    margin-top:30px;
+
+ }
+
+ .section-4 .city_feature_section .city_feature_section_img:hover{
+
+     background-position:center left;
+
+ }
+
+ .city_header{
+
+
+    margin-left:255px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+    padding-top:20px;
+ }
+
+
+
+ .city_feature_section{
+    margin-left:150px;
+    padding-top:20px;
+    overflow:hidden;
+ }
+
+ .city_feature_title{
+    position:relative;
+    top:467px;
+    font-family: 'Montserrat', sans-serif;
+
+ }
+
+ .city_feature_title h4{
+    text-transform: uppercase;
+    font-size:18px;
+ }
+
+  .city_feature_sections{
+
+      padding-top:42px;
+      font-family: 'Montserrat', sans-serif;
+  }
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html  lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Tour</title>
+    <link th:href="@{/css/homepage.css}" rel="stylesheet" >
+<!--    <link rel="stylesheet" th:href="@{/css/font-awesome-4.7.0/css/font-awesome.min.css}">-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+
+</head>
+<body>
+    <nav class="mynavbar">
+        <div class="mynavbar_div">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li>Service</li>
+                <li>About</li>
+                <li><a href="/home/login">Log In</a></li>
+                <li><a href="/home/page">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="section-1">
+        <h1>&ldquo; We are Connecting you with the Survey Company <span>&rdquo;</span></h1>
+        <h5>Sign Up for Free</h5>
+<!--        <input type="button" class="btn btn-outline-light sign_up" value="Sign Up"/>-->
+        <a href="/home/page" class="sign-up_btn"></a>
+    </section>
+
+
+
+
+    <section class="section-2">
+
+        <div class="section-2_title">
+            <h1>Our features</h1>
+        </div>
+        <div class="card" style="width: 18rem;">
+<!--            <img class="card-img-top" src="..." alt="Card image cap">-->
+            <i class="fas fa-users-cog"></i>
+            <div class="card-body">
+                <h5 class="card-title">Excellent service</h5>
+                <p class="card-text">We provice excellent service for our customers.</p>
+<!--                <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <!--            <img class="card-img-top" src="..." alt="Card image cap">-->
+            <i class="fas fa-heart"></i>
+            <div class="card-body">
+                <h5 class="card-title">Easy Access</h5>
+                <p class="card-text">Our application is very easy to access to customers </p>
+<!--                <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <!--            <img class="card-img-top" src="..." alt="Card image cap">-->
+            <i class="fas fa-clock"></i>
+            <div class="card-body">
+                <h5 class="card-title">24/7 support</h5>
+                <p class="card-text">We support 24/7 to our clients without any zero questions asked.</p>
+<!--                <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+        </div>
+    </section>
+    <section class="section-3">
+        <div class="section-3_title">
+            <h1>Our Testimonials</h1>
+        </div>
+        <div class="card" style="width: 18rem;">
+           <img class="card-img-top img_1" src="../static/img/election-result-2020.jpeg" th:src="@{/img/election-result-2020.jpeg}"  alt="Card image cap" width="500">
+
+            <div class="card-body">
+                <h5 class="card-title">Election 2020</h5>
+                <p class="card-text">We have conducted survey on election 2020.</p>
+                <!--                <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top img_1" src="../static/img/poverty-rate-in-india.jpeg" th:src="@{/img/poverty-rate-in-india.jpeg}" alt="Card image cap">
+
+            <div class="card-body">
+                <h5 class="card-title">Poverty Rate</h5>
+                <p class="card-text">We have conducted survey on poverty rate in India.</p>
+                <!--                <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top img_1" src="../static/img/covid-19.jpeg" th:src="@{/img/covid-19.jpeg}" alt="Card image cap">
+
+            <div class="card-body">
+                <h5 class="card-title">COVID-19</h5>
+                <p class="card-text">We have conducted survey on symptoms of  covid-19 virus.</p>
+                <!--                <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+        </div>
+    </section>
+    <section class="section-4">
+        <div class="city_header">
+            <h2>We're are currently in this city.</h2>
+        </div>
+        <div class="city_feature_section">
+<!--            <img src="../static/img/dest_wiki_541.jpg" th:src="@{/img/dest_wiki_541.jpg}">-->
+            <div class="city_feature_section_img">
+            <div class="city_feature_title">
+                <h4>Ahmedabad</h4>
+            </div>
+            </div>
+            <div class="city_feature_sections">
+                <div class="city_feature">
+                    <i class="fa fa-user" aria-hidden="true"></i>   &nbsp;1000+ happy customers.
+                </div>
+                <div class="city_feature">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    1000+ surveys conducted.
+                </div>
+                <div class="city_feature">
+                    <i class='fab fa-twitter' aria-hidden="true"></i>
+                    1000+ followers.
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>

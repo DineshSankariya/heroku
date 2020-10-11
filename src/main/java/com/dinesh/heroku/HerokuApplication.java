@@ -22,7 +22,7 @@ class HomenewController {
 	@RequestMapping("/")
 	public String home_page(Model model){
 		model.addAttribute("user",new User());
-		return "form";
+		return "homepage";
 	}
 
 
