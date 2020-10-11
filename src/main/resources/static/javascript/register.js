@@ -13,7 +13,6 @@ $(document).ready(function(){
                  "mobile":$("#mobile").val(),
                  "dob":$("#dob").val(),
 
-
              };
 
        console.log(JSON.stringify(data));
