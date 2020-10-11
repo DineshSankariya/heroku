@@ -9,7 +9,7 @@ $(document).ready(function(){
 
                  "name":$("#name").val(),
                  "email":$("#email").val(),
-                 "password":$("#pass").val(),
+                 "pass":$("#pass").val(),
                  "mobile":$("#mobile").val(),
                  "dob":$("#dob").val(),
 
