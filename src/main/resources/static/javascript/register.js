@@ -1,10 +1,32 @@
 $(document).ready(function(){
 //        alert("submit button clicked before");
+//    $("input").focus(function(){
+////        $("h2").css({"font-size":"49px","color":"white","transform":"rotate(-90deg)","position":"absolute","left":"140px","top":"285px","letter-spacing":"15px","transition-property":"all","transition":"0.7s"});
+//        $("h2").addClass("animate_h2");
+//    })
+//
+//
+//    $("input").focusout(function(){
+//            $("h2").removeClass("animate_h2");
+//        })
+
+    $("#fname").on("focus",function(){
+             $("h2").addClass("animate_h2");
+     })
+
+     $("#dob ").focusout(function(){
+                  $("h2").removeClass("animate_h2");
+          })
+
+
+
     $(".submit").click(function(event){
 
         event.preventDefault();
 //        alert("submit button clicked");
 //       var user=$("form").serialize();
+
+//        $("h2").removeClass("animate_h2");
           var data={
 
                  "name":$("#fname").val()+" "+$("#lname").val(),

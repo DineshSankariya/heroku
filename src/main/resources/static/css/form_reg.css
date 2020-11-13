@@ -16,7 +16,7 @@
     margin-top: 15px;
     margin-bottom: 0px;
     width:400px;
-     box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.2);
 }
 
 .form input{
@@ -103,8 +103,24 @@ input[type='date']:focus{
     margin-top:10px;
     margin-bottom:20px;
     font-family: 'Poppins', sans-serif;
-    font-size:29px;
+  /*  font-size:29px;*/
     color:white;
+    transition-property:all;
+        transition:0.7s;
+}
+
+.animate_h2{
+
+    font-size:49px;
+    color:white;
+    transform:rotate(-90deg);
+    position:absolute;
+    left:140px;
+    top:285px;
+    letter-spacing:15px;
+    transition-property:all;
+    transition:0.7s;
+
 }
 
 
