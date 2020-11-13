@@ -30,6 +30,14 @@ public class UserRestController {
 
     }
 
+
+//    @GetMapping("/user")
+//    public String users(){
+//
+//
+//
+//    }
+
     @GetMapping("/user")
     public List<User> users(){
 

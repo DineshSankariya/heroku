@@ -23,7 +23,13 @@ $(document).ready(function(){
             data: JSON.stringify(data),
             success: function(data){
 //                alert('Form submitted');
-                alert(data);
+                if(data=="Not saved"){
+                    alert(data);
+                }else{
+                    alert(data);
+                    window.location.href="/";
+                }
+
             },
         error: function() {
             alert('failure');
