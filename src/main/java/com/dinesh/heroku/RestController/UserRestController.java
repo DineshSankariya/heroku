@@ -39,11 +39,16 @@ public class UserRestController {
 
         String user=request.getParameter("username");
         String password=request.getParameter("password");
-        if(userDao.getuserlogin(user,password)){
-            String text="<center><h2>You have successfully logged in and our website is currently in progress</h2></center>";
-            response.setContentType("text/html");
-            response.setCharacterEncoding("UTF-8");;
-            response.getWriter().write(text);
+        if(user.trim().isEmpty()!=true && password.trim().isEmpty()!=true){
+            if(userDao.getuserlogin(user,password)){
+                String text="<center><h2>You have successfully logged in and our website is currently in progress</h2></center>";
+                response.setContentType("text/html");
+                response.setCharacterEncoding("UTF-8");;
+                response.getWriter().write(text);
+            }
+        }
+        else{
+            response.sendRedirect("/home/login");
         }
 
     }

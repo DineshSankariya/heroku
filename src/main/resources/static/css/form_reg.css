@@ -12,7 +12,7 @@
     transform: translate(-50%,-50%);
     border: 2px solid white;
     border-radius: 15px;
-    padding: 40px 20px 30px 20px;
+    padding: 35px 17px 17px 17px;
     margin-top: 15px;
     margin-bottom: 0px;
     width:400px;
@@ -139,6 +139,21 @@ input[type='date']:focus{
 #student_std:focus{
      background:transparent;
      border-color:#00bd56;
+}
+
+.home{
+    text-decoration:none;
+    font-family: 'Montserrat', sans-serif;
+    font-size:14px;
+}
+
+.home:hover{
+    text-decoration:none;
+    color:#0779e4;
+}
+
+#login:hover{
+    color:#21bf73;
 }
 
 /* h3{
