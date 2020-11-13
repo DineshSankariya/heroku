@@ -22,11 +22,11 @@ public class UserRestController {
 
     @PostMapping(value = "/save",consumes = MediaType.APPLICATION_JSON_VALUE)
     public String save_user(@RequestBody User user){
-
+        if(user.getName().trim().isEmpty() || user.getEmail().trim().isEmpty() || user.getDob().trim().isEmpty() || user.getMobile().trim().isEmpty() || user.getPass().isEmpty()){
+            return "Not saved";
+        }
         userDao.save_user(user);
-
         return "saved - "+user.getName();
-
 
     }
 

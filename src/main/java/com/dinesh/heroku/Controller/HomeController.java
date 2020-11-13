@@ -16,5 +16,16 @@ public class HomeController {
         return "form";
     }
 
+    @RequestMapping("/login")
+    public String login_page(Model model){
+//        model.addAttribute("user",new User());
+        return "login";
+    }
+
+    @RequestMapping("/reg")
+    public String registration(){
+        return "registration";
+    }
+
 
 }

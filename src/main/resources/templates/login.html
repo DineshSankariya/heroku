@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@500;600;700;800&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+    <link th:href="@{/css/login.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div class="div-main">
+        <center>
+            <h2>PLEASE LOG IN</h2>
+<!--            <h3>Website in Progress.....</h3>-->
+            <form action="#" th:action="@{/loggingprocess}" method="post">
+<!--                <label class="label-1">-->
+<!--                    <i class="fa fa-user" aria-hidden="true"></i>-->
+<!--                </label>-->
+                <input type="text" class="email" name="username" placeholder="Username" autocomplete="off">
+                <br/>
+                <!--                <p>Password</p>-->
+<!--                <label class="label-2">-->
+<!--                    <i class="fa fa-lock" aria-hidden="true"></i>-->
+<!--                </label>-->
+                <input type="password" class="password" name="password" placeholder="Password">
+                <br/>
+                <!--                <a th:href="@{/login/reg}">Sign Up Now</a>   <br/><br/>-->
+
+                <select id="role">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <br/><br/>
+
+                <input type="submit" class="submit" value="Login">
+                <p class="sign_up">Create an account?<span><a th:href="@{/home/reg}">Sign Up Now</a></span></p>
+            </form>
+        </center>
+    </div>
+
+</body>
+</html>

@@ -7,7 +7,7 @@ $(document).ready(function(){
 //       var user=$("form").serialize();
           var data={
 
-                 "name":$("#name").val(),
+                 "name":$("#fname").val()+" "+$("#lname").val(),
                  "email":$("#email").val(),
                  "pass":$("#pass").val(),
                  "mobile":$("#mobile").val(),

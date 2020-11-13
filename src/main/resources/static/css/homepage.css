@@ -93,7 +93,6 @@ font-family: 'Roboto', sans-serif;*/
     margin-left:345px;
     margin-top:20px;
 
-
 }
 
 .mynavbar_div ul {
@@ -107,7 +106,7 @@ font-family: 'Roboto', sans-serif;*/
 
     color:white;
     display:inline-block;
-    padding-right:50px;
+    padding-right:30px;
     font-family: 'Montserrat', sans-serif;
     font-weight:600;
     cursor:pointer;
@@ -312,4 +311,93 @@ font-family: 'Roboto', sans-serif;*/
       padding-top:42px;
       font-family: 'Montserrat', sans-serif;
   }
+
+
+/*@media(max-width:1322px){
+
+    .mynavbar_div{
+
+        max-width:50%;
+        margin-left:150px;
+
+    }
+
+    .section h1{
+        position:relative;
+             top:210px;
+             left:0px;
+             max-width:74%;
+             margin-left:190px;
+    }
+
+    .mynavbar_div ul li{
+        display:inline-block;
+    }
+
+
+
+}*/
+
+#check{
+    display:none;
+}
+
+.checkbtn{
+    display:none;
+    font-size:40px;
+    color:white;
+
+}
+
+@media(max-width:1322px){
+
+    .mynavbar_div{
+
+        max-width:100%;
+        margin-left:0px;
+        margin-top:0px;
+        height:80vh;
+       /* background: rgba(0,0,0,0.7);*/
+       backgournd:none;
+
+
+    }
+
+    /*.mynavbar_div ul{
+       text-align:center;
+    }*/
+
+    .mynavbar_div ul{
+        float:right;
+        height:80vh;
+       margin-top:40px;
+      /* margin-right:-30px;*/
+       display:none;
+        transition:1s;
+        transition-property:display;
+    }
+    .mynavbar_div ul li{
+
+         display:block;
+         margin-top:35px;
+
+
+
+    }
+
+   .checkbtn{
+       display:block;
+       font-size:22px;
+       color:white;
+       float:right;
+       margin-right:50px;
+       margin-top:20px;
+       cursor:pointer;
+   }
+
+
+
+
+
+}
 
