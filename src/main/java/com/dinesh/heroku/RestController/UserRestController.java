@@ -6,7 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.awt.*;
+import java.io.IOException;
 import java.util.List;
 
 @RestController
@@ -31,12 +34,19 @@ public class UserRestController {
     }
 
 
-//    @GetMapping("/user")
-//    public String users(){
-//
-//
-//
-//    }
+    @PostMapping("/loggingprocess")
+    public void users(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+        String user=request.getParameter("username");
+        String password=request.getParameter("password");
+        if(userDao.getuserlogin(user,password)){
+            String text="You have successfully logged in and our website is currently progress";
+            response.setContentType("text/plain");
+            response.setCharacterEncoding("UTF-8");;
+            response.getWriter().write(text);
+        }
+
+    }
 
     @GetMapping("/user")
     public List<User> users(){
