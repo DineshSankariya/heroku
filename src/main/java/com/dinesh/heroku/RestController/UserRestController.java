@@ -40,8 +40,8 @@ public class UserRestController {
         String user=request.getParameter("username");
         String password=request.getParameter("password");
         if(userDao.getuserlogin(user,password)){
-            String text="You have successfully logged in and our website is currently progress";
-            response.setContentType("text/plain");
+            String text="<center><h2>You have successfully logged in and our website is currently progress</h2></center>";
+            response.setContentType("text/html");
             response.setCharacterEncoding("UTF-8");;
             response.getWriter().write(text);
         }
