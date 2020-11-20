@@ -32,7 +32,7 @@ $(document).ready(function(){
 //                                    alert("Enter valid username and password");
                                     setTimeout(function(){
                                         window.location.href="/home/login";
-                                    },2500);
+                                    },1700);
                             }
 
                         }
