@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    $("form").css("margin-top","10px");
     $(".submit").click(function(event){
 
         event.preventDefault();
