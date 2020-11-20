@@ -28,6 +28,7 @@ $(document).ready(function(){
                                  var error="<p>User doesn't exists</p>";
                                     $("h2").append(error);
                                     $("p").css({"margin":"0px","padding":"0px","font-size":"19px"});
+                                    $("form").css("margin-top","0px");
 //                                    alert("Enter valid username and password");
                                     setTimeout(function(){
                                         window.location.href="/home/login";
