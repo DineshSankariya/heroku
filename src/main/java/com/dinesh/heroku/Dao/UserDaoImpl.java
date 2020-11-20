@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
 import javax.transaction.Transactional;
 import java.util.List;
@@ -61,12 +62,20 @@ public class UserDaoImpl implements UserDao {
 
         user.setParameter("n",name);
         user.setParameter("p",pass);
-
-        if(user!=null){
-            return true;
+//        User newuser=user.getSingleResult();
+//        System.out.println(newuser.getName()+"---"+newuser.getPass());
+        try{
+            if(user.getSingleResult()!=null){
+                return true;
+            }
+        }catch(NoResultException nre){
+            System.out.println("No entity found");
+        }finally{
+            return false;
         }
 
-        return false;
+
+
     }
 
 

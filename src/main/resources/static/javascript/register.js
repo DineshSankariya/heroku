@@ -10,11 +10,11 @@ $(document).ready(function(){
 //            $("h2").removeClass("animate_h2");
 //        })
 
-    $("#fname").on("focus",function(){
+    $("input").on("focus",function(){
              $("h2").addClass("animate_h2");
      })
 
-     $("#dob ").focusout(function(){
+     $("#dob").focusout(function(){
                   $("h2").removeClass("animate_h2");
           })
 
@@ -23,6 +23,7 @@ $(document).ready(function(){
     $(".submit").click(function(event){
 
         event.preventDefault();
+//        $("h2").removeClass("animate_h2");
 //        alert("submit button clicked");
 //       var user=$("form").serialize();
 

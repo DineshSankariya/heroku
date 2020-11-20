@@ -34,23 +34,26 @@ public class UserRestController {
     }
 
 
-    @PostMapping("/loggingprocess")
-    public void users(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    @RequestMapping("/loggingprocess")
+    @ResponseBody
+    public String users(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         String user=request.getParameter("username");
         String password=request.getParameter("password");
         if(user.trim().isEmpty()!=true && password.trim().isEmpty()!=true){
             if(userDao.getuserlogin(user,password)){
-                String text="<center><h2>You have successfully logged in and our website is currently in progress</h2></center>";
-                response.setContentType("text/html");
-                response.setCharacterEncoding("UTF-8");;
-                response.getWriter().write(text);
+//                String text="<center><h2>You have successfully logged in and our website is currently in progress</h2></center>";
+//                response.setContentType("text/html");
+//                response.setCharacterEncoding("UTF-8");;
+//                response.getWriter().write(text);
+                System.out.println(user+" "+password);
+                return "granted";
             }
         }
-        else{
-            response.sendRedirect("/home/login");
-        }
-
+//        else{
+//            response.sendRedirect("/home/login");
+//        }
+        return "denied";
     }
 
     @GetMapping("/user")
