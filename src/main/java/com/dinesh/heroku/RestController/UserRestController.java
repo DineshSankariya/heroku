@@ -25,6 +25,7 @@ public class UserRestController {
 
     @PostMapping(value = "/save",consumes = MediaType.APPLICATION_JSON_VALUE)
     public String save_user(@RequestBody User user){
+        System.out.println(user.toString());
         if(user.getName().trim().isEmpty() || user.getEmail().trim().isEmpty() || user.getDob().trim().isEmpty() || user.getMobile().trim().isEmpty() || user.getPass().isEmpty()){
             return "Not saved";
         }
@@ -40,13 +41,14 @@ public class UserRestController {
 
         String user=request.getParameter("username");
         String password=request.getParameter("password");
+//        System.out.println(user+" "+password);
         if(user.trim().isEmpty()!=true && password.trim().isEmpty()!=true){
             if(userDao.getuserlogin(user,password)){
 //                String text="<center><h2>You have successfully logged in and our website is currently in progress</h2></center>";
 //                response.setContentType("text/html");
 //                response.setCharacterEncoding("UTF-8");;
 //                response.getWriter().write(text);
-                System.out.println(user+" "+password);
+//                System.out.println(user+" "+password);
                 return "granted";
             }
         }

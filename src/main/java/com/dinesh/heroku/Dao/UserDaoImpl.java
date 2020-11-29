@@ -62,19 +62,22 @@ public class UserDaoImpl implements UserDao {
 
         user.setParameter("n",name);
         user.setParameter("p",pass);
-//        User newuser=user.getSingleResult();
+        User newuser=user.getResultList().get(0);
 //        System.out.println(newuser.getName()+"---"+newuser.getPass());
         try{
-            if(user.getSingleResult()!=null){
+            if(newuser!=null){
+
                 return true;
             }
-        }catch(NoResultException nre){
+        }catch(Exception e){
             System.out.println("No entity found");
-        }finally{
-            return false;
         }
+//        finally{
 
+//            return false;
+//        }
 
+        return false;
 
     }
 
