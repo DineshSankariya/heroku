@@ -58,10 +58,10 @@ public class UserDaoImpl implements UserDao {
 
         Session session=entityManager.unwrap(Session.class);
 
-        TypedQuery<User> user =session.createQuery("from User where name=:n AND pass=:p",User.class);
+        TypedQuery<User> user =session.createQuery("from User where name=LOWER(trim(:n)) AND pass=LOWER(trim(:p))",User.class);
 
-        user.setParameter("n",name);
-        user.setParameter("p",pass);
+        user.setParameter("n",name.trim().toLowerCase());
+        user.setParameter("p",pass.trim().toLowerCase());
         User newuser=user.getResultList().get(0);
 //        System.out.println(newuser.getName()+"---"+newuser.getPass());
         try{
