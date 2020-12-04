@@ -58,7 +58,7 @@ public class UserDaoImpl implements UserDao {
 
         Session session=entityManager.unwrap(Session.class);
 
-        TypedQuery<User> user =session.createQuery("from User where name=LOWER(:n) AND pass=LOWER(:p)",User.class);
+        TypedQuery<User> user =session.createQuery("from User where email=LOWER(:n) AND pass=LOWER(:p)",User.class);
 
         user.setParameter("n",name.trim().toLowerCase());
         user.setParameter("p",pass.trim().toLowerCase());
